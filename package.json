@@ -1,0 +1,17 @@
+{
+  "name": "voting-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:winplam/voting-app.git",
+  "author": "Win Lam",
+  "license": "MIT",
+  "scripts": {
+    "go": "open http://localhost:3000; npm run server",
+    "start": "npm run server",
+    "server": "live-server public --host=localhost --port=3000",
+    "server2": "live-server public --host=localhost --port=3000 --middleware=./disable-browser-cache.js"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
